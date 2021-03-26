@@ -7,7 +7,7 @@ Những câu hỏi nào bạn không biết hãy Google, đọc, hiểu rồi tr
 
 1. Hãy nói ra sự khác biệt giữa JDK và JRE?
 2. Java Virtual Machine là gì? có tác dụng gì?
-3. Nếu trong không 
+3. Trong đoạn code dưới đây, kết quả in ra là gì? giải thích!
   ```java
   public static void main(String[] args) {
       int i;
