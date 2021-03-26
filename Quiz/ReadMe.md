@@ -15,6 +15,7 @@ Những câu hỏi nào bạn không biết hãy Google, đọc, hiểu rồi tr
   }
   ```
   Hỏi: kết quả in ra màn hình là gì?
+
 4. Hãy so sánh ưu và nhược điểm của 2 loại vòng lặp này
 
   ```java
@@ -30,6 +31,7 @@ Những câu hỏi nào bạn không biết hãy Google, đọc, hiểu rồi tr
     System.out.println(item);
   }
   ```
+  
 5. Cho một mảng các số tự nhiên [1, 2, 0, 8, 5, 3, 9, 7] hãy viết hàm để dồn tất cả số lẻ sang bên trái, số chẵn sang bên phải
 
 6. Cho một dãy có số lượng các chữ số là lẻ 2N + 1, ví dụ "123", "32567"
