@@ -40,4 +40,25 @@ public String reverseAString(String inString) {
 }
 ```
 
-Trong class String có một phương thức transform giúp lập trình viên có thể rất
+Trong class String có một phương thức transform giúp biến đổi một chuỗi sang chuỗi khác (đảo chuỗi, loại bỏ ký tự đặc biệt) hoặc sang dạng List.
+
+Đảo chuỗi trả về kiểu String
+```java
+public String reverseAString2(String inString) {
+  return inString.transform(str -> {
+    StringBuilder sb = new StringBuilder();
+    for (char c:str.toCharArray()) {
+      sb.insert(0, c);
+    }
+    return sb.toString();
+  });
+}
+```
+
+Chia một chuỗi thành mảng các từ trả về ```List<String>```
+```java
+public List<String> splitWords(String inString) {
+  return inString.transform(str -> Arrays.asList(str.split("[\\s,]+"))
+  );
+}
+```
