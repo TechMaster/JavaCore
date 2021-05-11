@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        String s = new String("Hello");
         //Tạo đối tượng sc
         Scanner sc = new Scanner(System.in); //System.in: Nhập thông tin từ bàn phím
         //Sử dụng các phương thức của lớp Scanner để nhập dữ liệu từ bàn phím
