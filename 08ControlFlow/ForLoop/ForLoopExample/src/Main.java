@@ -7,6 +7,9 @@ public class Main {
 
         System.out.println("\nCác số từ 50 -> 0: ");
         loopNumberReversed();
+
+        System.out.println("\nCác số chẵn từ 0 -> 50 :");
+        evenNumber();
     }
 
     //Lặp chuỗi "Hello Java" 10 lần
@@ -25,8 +28,17 @@ public class Main {
 
     //In các số từ 50 -> 0
     static void loopNumberReversed(){
-        for (int i = 50; i >= 0; i--){
+        for (int i = 50; i >= 0; i--){ //Khởi tạo biến i = 50, điều kiện lặp là i >= 0, sau mỗi lần lặp giảm i 1 đơn vị
             System.out.print(i +"\t");
+        }
+    }
+
+    //In các số chẵn từ 0 -> 50
+    static void evenNumber(){
+        for (int i = 0; i <= 50; i++){ //Sử dụng vòng lặp để lặp từ 0 -> 50
+            if (i % 2 == 0){ //kiểm tra điều kiện i chia hết cho 2
+                System.out.print(i + "\t"); //Điều kiện đúng in i ra màn hình
+            }
         }
     }
 }
