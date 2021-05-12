@@ -43,7 +43,7 @@ public class Main {
     static void wrongCondition(){
         int i = 3;
         do {
-            System.out.println("Hello!!!");
+            System.out.println("KHối lệnh này vẫn được thực hiện 1 lần");
         }while(i == 5);
     }
 
