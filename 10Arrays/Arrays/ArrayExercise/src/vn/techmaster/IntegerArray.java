@@ -20,7 +20,7 @@ public class IntegerArray {
 
     public static int findMax(int[] array) {
         int max = array[0];
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (max < array[i]) {
                 max = array[i];
             }
@@ -38,10 +38,9 @@ public class IntegerArray {
     }
 
     public int findMax2(int[] array) {
-        int max2 = array[0];
-
+        int max2 = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > max2 && array[i] < findMax(array) ) {
+            if (array[i] < findMax(array) && array[i] > max2 ) {
                 max2 = array[i];
 
             }
@@ -59,7 +58,7 @@ public class IntegerArray {
     }
 
     public int findMin(int array[]){
-        int min = array[0];
+        int min = 0;
         for (int i = 1; i < array.length; i++) {
             if(min > array[i]){
                 min = array[i];
