@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 public class LinkedHashSetExample {
-    public static void main(String[] args) {
+    public static void demoLinkedHashSet() {
         LinkedHashSet<String> linkedset =
                 new LinkedHashSet<String>();
 

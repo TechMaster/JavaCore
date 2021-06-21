@@ -10,7 +10,7 @@ public class Main {
 //        LinkedListExample linkedList = new LinkedListExample();
 //        linkedList.methodInLinkedList();
 
-        Efficiency.checkEfficiency();
+        //Efficiency.checkEfficiency();
 
 //        Map<Integer,String> hm = new TreeMap<>();
 //        Map<Integer,String> hm2 = new LinkedHashMap<>();
@@ -56,6 +56,8 @@ public class Main {
 //        for (Employee emp : listEmployees){
 //            System.out.println(emp);
 //        }
+
+        StackExample.demoStack();
 
 
 

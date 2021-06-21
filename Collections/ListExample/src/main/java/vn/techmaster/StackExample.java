@@ -3,7 +3,7 @@ package vn.techmaster;
 import java.util.Stack;
 
 public class StackExample {
-    public static void main(String[] args) {
+    public static void demoStack() {
         Stack<String> game= new Stack<>();
 
         // Add elements to Stack

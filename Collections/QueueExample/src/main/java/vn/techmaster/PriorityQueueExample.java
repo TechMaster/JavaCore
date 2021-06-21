@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.PriorityQueue;
 
 public class PriorityQueueExample {
-    public static void main(String[] args) {
+    public static void demoPriorityQueue() {
         // Creating empty priority queue
         PriorityQueue<Integer> pQueue = new PriorityQueue<Integer>();
 

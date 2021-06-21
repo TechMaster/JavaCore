@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class LinkedListExample {
-    public static void main(String[] args) {
+    public static void demoLinkedList() {
         Queue<Integer> q = new LinkedList<>();
 
         // Adds elements {0, 1, 2, 3, 4} to

@@ -4,7 +4,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class SortedSetExample {
-    public static void main(String[] args) {
+    public static void demoSortedSet() {
         SortedSet<String> ts = new TreeSet<String>();
 
         // Elements are added using add() method

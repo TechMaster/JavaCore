@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class HashSetExample {
-    public static void main(String[] args) {
+    public static void demoHashSet() {
         HashSet<String> h = new HashSet<String>();
 
         // Adding elements into HashSet usind add()
