@@ -1,11 +1,11 @@
 public class Customer {
-    int id;
+    long id;
     String first_name;
     String last_name;
     String email;
     String mobile;
     String address;
-    public Customer(int id, String first_name, String last_name, String email, String mobile, String address) {
+    public Customer(long id, String first_name, String last_name, String email, String mobile, String address) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -13,10 +13,10 @@ public class Customer {
         this.mobile = mobile;
         this.address = address;
     }
-    public int getId() {
+    public long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
     public String getFirst_name() {
@@ -49,6 +49,12 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }
-
+    
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return id + " - " +first_name+" - " + last_name 
+        + " - " + email + " - " + mobile + " - " + address;
+    }
     
 }
