@@ -52,7 +52,6 @@ public class Customer {
     
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return id + " - " +first_name+" - " + last_name 
         + " - " + email + " - " + mobile + " - " + address;
     }

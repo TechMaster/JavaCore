@@ -1,8 +1,10 @@
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import com.google.gson.reflect.TypeToken;
+
+import com.google.gson.Gson;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -30,10 +32,8 @@ public class ReadFile {
             customerList.forEach( cus -> parseCustomerObject( (JSONObject) cus ) );
              
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (ParseException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
@@ -57,39 +57,53 @@ public class ReadFile {
     }
 
 
-    //Cách 2
-    public List<Customer> getCustomers(){
-        List<Customer> list = new ArrayList<>();
-        JSONParser parser = new JSONParser();
-
+    //Cách 2: Sử dụng Gson
+    public void getCustomers(){
+        List<Customer> listCustomers;
+        Gson gson = new Gson();
         try(FileReader reader = new FileReader("customer.json")){
-            Object obj = parser.parse(reader);
-            JSONObject jsonObject = (JSONObject) obj;
-            long id = (long) jsonObject.get("id");
 
-            String first_name = (String) jsonObject.get("first_name");
-    
-            String last_name = (String) jsonObject.get("last_name");
-    
-            String email = (String) jsonObject.get("email");
-    
-            String mobile = (String) jsonObject.get("mobile");
-    
-            String address = (String) jsonObject.get("address");
+            listCustomers = new Gson().fromJson(reader, new TypeToken<List<Customer>>() {}.getType());
+            for (Customer customer : listCustomers) {
+                System.out.println(customer);
+            }
 
-            list.add(new Customer(id, first_name, last_name, email, mobile, address));
-
-            // for (Customer customer : list) {
-            //     System.out.println(customer);
-            // }
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            reader.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
-        return list;
+
+        // List<Customer> list = new ArrayList<>();
+        // JSONParser parser = new JSONParser();
+        // //JSONArray listCustomer;
+
+        // try(FileReader reader = new FileReader("customer.json")){
+        //     Object obj = parser.parse(reader);
+            
+        //     //JSONObject jsonObject = (JSONObject) obj;
+        //     listCustomer = new JSONArray();
+        //     long id = (long) jsonObject.get("id");
+
+        //     String first_name = (String) jsonObject.get("first_name");
+    
+        //     String last_name = (String) jsonObject.get("last_name");
+    
+        //     String email = (String) jsonObject.get("email");
+    
+        //     String mobile = (String) jsonObject.get("mobile");
+    
+        //     String address = (String) jsonObject.get("address");
+  
+
+        //     list.add(new Customer(id, first_name, last_name, email, mobile, address));
+
+        //     //listCustomer.addAll(list);
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        // } catch (ParseException e) {
+        //     e.printStackTrace();
+        // }
+        // return listCustomer;
     }
     
 }

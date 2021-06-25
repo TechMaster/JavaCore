@@ -7,6 +7,7 @@ JSON (JavaScript Object Notation) là một kiểu định dạng dữ liệu tu
 
 Sử dụng thư viện json-simple: https://code.google.com/archive/p/json-simple/downloads
 
+Sử dụng thư viện Gson : https://github.com/google/gson
 ## Tạo dữ liệu mẫu
 Tạo dữ liệu mẫu từ https https://www.mockaroo.com/, trả về file customer.json có 1000 bản ghi 
 
