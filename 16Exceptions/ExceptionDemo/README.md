@@ -56,3 +56,5 @@ array[-1] = 10;
 ```
 
 ![image](https://user-images.githubusercontent.com/70504465/123302971-765af980-d547-11eb-8ed2-b3c9113f7b69.png)
+
+Ngoài ra còn một số exception đáng kể đến như InputMismatchException, NoSuchElementException, FileNotFoundException, ...
