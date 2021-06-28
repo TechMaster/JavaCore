@@ -61,9 +61,9 @@ Chúng ta có thể sắp xếp các phần tử của:
 Tham khảo thêm tại đây: https://github.com/EriChannel/JavaCore/tree/main/JavaCore_3/Collections/Comparator%26Comparable
 
 ## Hãy thực hiện thêm các công việc sau:
-Thực hiện tìm phim theo tên, thể loại, ngôn ngữ, nêu không có thì thông báo không có phim đó
-Tìm kiếm phim theo tên tác giả
-Sắp xếp các phim theo sự tăng dần của thời lượng 
-Sắp xếp phim theo thời gian công chiếu
-Liệt kê các loại ngôn ngữ và số lượng phim theo từng loại ngôn ngữ đó
+Thực hiện tìm phim theo tên, thể loại, ngôn ngữ, nêu không có thì thông báo không có phim đó  
+Tìm kiếm phim theo tên tác giả  
+Sắp xếp các phim theo sự tăng dần của thời lượng   
+Sắp xếp phim theo thời gian công chiếu  
+Liệt kê các loại ngôn ngữ và số lượng phim theo từng loại ngôn ngữ đó  
 
