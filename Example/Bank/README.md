@@ -20,7 +20,7 @@ Nhập mô tả và tiến hành gửi tiền
 Sau khi nhận thông bái chuyển tiền thành công sẽ lưu vào lịch sử giao dịch
 
 ## Lịch sử giao dịch
-Lịch sử giao dịch bao gồm các thông tin như mã giao dịch, ngày giao dịch, mô tả giao dịch, số tiền
-VD: 
-1 - 15/6/2021 - Đóng tiền nhà - 2.000.000
-2 - 05/06/2021 - Nhận lương tháng 5 - 15.000.000
+Lịch sử giao dịch bao gồm các thông tin như mã giao dịch, ngày giao dịch, mô tả giao dịch, số tiền  
+VD:   
+1 - 15/6/2021 - Đóng tiền nhà - 2.000.000  
+2 - 05/06/2021 - Tiền điện nước - 500.000  
