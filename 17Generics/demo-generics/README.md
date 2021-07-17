@@ -44,6 +44,6 @@ list.add(32);//Compile Time Error
 - T: Type 
 
 ## Wildcard
-<?> : Chấp nhận mọi kiểu của đối tượng
-<? extends type>: Chấp nhận bất kỳ đối tượng nào miễn là đối tượng đó kế thừa từ type 
-<? super type> : chấp nhận bất kỳ đối tượng nào miễn là đối tượng đó là cha của type
+`<?>` : Chấp nhận mọi kiểu của đối tượng  
+`<? extends type>`: Chấp nhận bất kỳ đối tượng nào miễn là đối tượng đó kế thừa từ type   
+`<? super type>` : chấp nhận bất kỳ đối tượng nào miễn là đối tượng đó là cha của type  
