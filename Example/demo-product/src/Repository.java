@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Repository {
@@ -16,13 +17,52 @@ public class Repository {
         listProducts.add(new Product("08", "Combo gội xả HAIRBURST", Category.COSMETICS, 100, 639000, 7));
         listProducts.add(new Product("09", "Tinh chất dưỡng ẩm sâu Klairs Rich Moist Soothing Serum", Category.COSMETICS, 50, 249000, 24));
         listProducts.add(new Product("10", "Kem dưỡng thể Paula’s Choice RESIST WEIGHTLESS BODY TREATMENT", Category.COSMETICS, 80, 715000, 63));
-        listProducts.add(new Product("11", "Áo thun TSUN", Category.FASHION, 250, 320000, 146));
+        listProducts.add(new Product("11", "Ao thun TSUN", Category.FASHION, 250, 320000, 146));
     }
 
     public void show(){
-        for (Product product : listProducts) {
-            System.out.println(product);
-        }
+        //Sử dụng foreach
+        // for (Product product : listProducts) {
+        //     System.out.println(product);
+        // }
+
+        //Sử dụng lambda
+        listProducts.forEach(product -> System.out.println(product));
+    }
+
+    public void sortProductByName(){
+        //Sử dụng comparator
+        // listProducts.sort(new Comparator<Product>(){
+
+        //     @Override
+        //     public int compare(Product o1, Product o2) {
+        //         return o1.getName().compareTo(o2.getName());
+        //     }
+            
+        // });
+
+        //sử dụng lambda
+        listProducts.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
+    }
+
+    public void filterProductByPrice(){
+        // for (Product product : listProducts) {
+        //     if(product.getPrice() > 10000){
+        //         System.out.println(product);
+        //     }
+        // }
+        //Sử dụng lambda và stream
+        listProducts.stream()
+            .filter(product -> product.getPrice() > 10000)
+            .forEach(product -> System.out.println(product));
+    }
+
+    public void countProductByAmountSale(){
+        long count = listProducts.stream()
+            .filter(product -> product.getAmountSale() >= 50)
+            .count();
+
+        System.out.println("Số lượng sản phẩm bán được từ 50 trở lên là: " + count);
     }
 
     

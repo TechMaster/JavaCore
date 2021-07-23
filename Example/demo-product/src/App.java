@@ -18,7 +18,18 @@ public class App {
                 break;
             
             case 2: 
+                System.out.println("Các sản phẩm có giá trên 10000: ");
+                repository.filterProductByPrice();
                 break;
+
+            case 3:
+                repository.countProductByAmountSale();
+                break;
+
+            case 7:
+                repository.sortProductByName();
+                System.out.println("Sản phẩm sau khi sắp xếp: ");
+                repository.show();
         }
     }
 }
