@@ -1,12 +1,12 @@
 ## Kiểm tra cuối kỳ
 Viết chương trình thực hiện:   
 Khi mới bắt đầu chương trình, người dùng có các lựa chọn:   
-1 - Đăng nhập 
+1 - Đăng nhập  
 2 - Đăng ký   
 
 ### Đăng nhập 
 Để đăng nhập, cần sử dụng username và password.  
-Nếu nhập sai username thì thông báo "Kiểm tra lại username" và cho đăng nhập lại
+Nếu nhập sai username thì thông báo "Kiểm tra lại username" và cho đăng nhập lại  
 Nếu nhập sai password thì hiện yêu cầu:  
 1 - Đăng nhập lại  
 2 - Quên mật khẩu  
