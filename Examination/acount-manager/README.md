@@ -7,7 +7,7 @@ Khi mới bắt đầu chương trình, người dùng có các lựa chọn:
 ### Đăng nhập 
 Để đăng nhập, cần sử dụng username và password.  
 Nếu nhập sai username thì thông báo "Kiểm tra lại username" và cho đăng nhập lại  
-Nếu nhập sai password thì hiện yêu cầu:  
+ nhập sai password thì hiện yêu cầu:  
 1 - Đăng nhập lại  
 2 - Quên mật khẩu  
 
@@ -25,5 +25,5 @@ Tại mục quên mật khẩu thì có nhập email.
 
 ### Tạo tài khoản mới
 Để tạo tài khoản mới cần nhập username, email, password. Trong đó:
-- email phải chuẩn (Sử dụng regex)
+- email phải chuẩn (Sử dụng regex), chưa tồn tại trong List
 - password dài từ 7 đến 15 ký tự, chứa ít nhất 1 ký tự in hoa, 1 ký tự đặc biệt (. , - _ ;)
