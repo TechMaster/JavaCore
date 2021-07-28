@@ -18,6 +18,8 @@ Sau khi đăng nhập thành công, hiển thị "Chào mừng <Tên user>, bạ
 4 - Đăng xuất (Sau khi đăng xuất quay về mục yêu cầu đăng nhập hoặc đăng xuất)
 0 - Thoát chương trình  
 
+Lưu ý: việc thay đổi chỉ áp dụng cho tài khoản bạn vừa đăng nhập, bạn không thể thay đổi của tài khoản khác.  
+
 ### Quên mật khẩu
 Tại mục quên mật khẩu thì có nhập email. 
 - Nếu email đúng thì cho phép đổi mật khẩu và tiến hành đăng nhập.  

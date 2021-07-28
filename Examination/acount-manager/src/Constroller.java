@@ -1,21 +1,32 @@
+import java.util.Scanner;
+
 public class Constroller {
+    String username;
+    String password;
+    
 
     public void login(){
         //Thực hiện đăng nhập
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập tên đăng nhập: ");
+        //nhập tên đăng nhập
+
+        System.out.println("Nhập mật khẩu: "); 
+        //nhập mật khẩu
 
     }
 
-    public void changePassword(){
+    public void changePassword(String username){
         //Thay đổi mật khẩu
 
     }
 
-    public void changeUsername(){
+    public void changeUsername(String username){
         //Thay đổi username
 
     }
 
-    public void changeEmail(){
+    public void changeEmail(String username){
         //Thay đổi email
 
     }
