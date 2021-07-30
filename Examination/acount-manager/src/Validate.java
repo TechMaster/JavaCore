@@ -7,7 +7,7 @@ public class Validate {
             Pattern.CASE_INSENSITIVE);
 
     public static final Pattern PasswordRegex = Pattern.compile(
-        "Nhập regex cho password tại đây",
+        "(?=.*[a-z])(?=.*[A-Z])(?=.*[.,-_;]).{7,15}",
         Pattern.CASE_INSENSITIVE);
 
     public static String validateEmail(String email) {
@@ -20,8 +20,13 @@ public class Validate {
     }
 
     public static String validatePassword(String password){
+        Matcher matcher = PasswordRegex.matcher(password);
+        if (matcher.find()) {
+            return password;
+        } else {
+            throw new RuntimeException("Password không hợp lệ");
+        }
         //Check password, password cần chứa 7 ký tự đến 15 ký tự
         //password chứa ít nhất 1 ký tự in hoa, 1 ký tự đặc biệt (. , - _ ;)
-        return password;
     }
 }

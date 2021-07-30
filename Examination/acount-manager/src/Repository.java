@@ -15,7 +15,7 @@ public class Repository {
             Type objectType = new TypeToken<List<User>>() {
             }.getType();
             users = new Gson().fromJson(reader, objectType);
-
+            
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
